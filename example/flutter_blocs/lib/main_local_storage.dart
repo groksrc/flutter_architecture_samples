@@ -4,7 +4,7 @@
 
 import 'dart:async';
 
-import 'package:bloc_flutter_sample/main.dart' as app;
+import 'package:flutter_blocs/main.dart' as app;
 import 'package:blocs/blocs.dart';
 import 'package:path_provider/path_provider.dart';
 import 'package:todos_repository_base/todos_repository_base.dart';

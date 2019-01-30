@@ -4,14 +4,14 @@
 
 import 'dart:async';
 
-import 'package:bloc_flutter_sample/dependency_injection.dart';
-import 'package:bloc_flutter_sample/localization.dart';
-import 'package:bloc_flutter_sample/widgets/extra_actions_button.dart';
-import 'package:bloc_flutter_sample/widgets/filter_button.dart';
-import 'package:bloc_flutter_sample/widgets/loading.dart';
-import 'package:bloc_flutter_sample/widgets/stats_counter.dart';
-import 'package:bloc_flutter_sample/widgets/todo_list.dart';
-import 'package:bloc_flutter_sample/widgets/todos_bloc_provider.dart';
+import 'package:flutter_blocs/dependency_injection.dart';
+import 'package:flutter_blocs/localization.dart';
+import 'package:flutter_blocs/widgets/extra_actions_button.dart';
+import 'package:flutter_blocs/widgets/filter_button.dart';
+import 'package:flutter_blocs/widgets/loading.dart';
+import 'package:flutter_blocs/widgets/stats_counter.dart';
+import 'package:flutter_blocs/widgets/todo_list.dart';
+import 'package:flutter_blocs/widgets/todos_bloc_provider.dart';
 import 'package:blocs/blocs.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_architecture_samples/flutter_architecture_samples.dart';

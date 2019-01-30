@@ -2,7 +2,7 @@
 // Use of this source code is governed by the MIT license that can be found
 // in the LICENSE file.
 
-import 'package:bloc_flutter_sample/main.dart' as app;
+import 'package:flutter_blocs/main.dart' as app;
 import 'package:blocs/blocs.dart';
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:firebase_auth/firebase_auth.dart';
