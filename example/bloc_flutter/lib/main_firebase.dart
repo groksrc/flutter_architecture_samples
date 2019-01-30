@@ -6,13 +6,13 @@ import 'package:bloc_flutter_sample/main.dart' as app;
 import 'package:blocs/blocs.dart';
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:firebase_auth/firebase_auth.dart';
-import 'package:firebase_flutter_repository/reactive_todos_repository.dart';
-import 'package:firebase_flutter_repository/user_repository.dart';
+import 'package:firebase_todos_repository/firebase_todos_repository.dart';
+import 'package:firebase_todos_repository/firebase_user_repository.dart';
 
 void main() {
   app.main(
     todosInteractor: TodosInteractor(
-      FirestoreReactiveTodosRepository(Firestore.instance),
+      FirebaseTodosRepository(Firestore.instance),
     ),
     userRepository: FirebaseUserRepository(FirebaseAuth.instance),
   );

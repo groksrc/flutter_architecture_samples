@@ -7,8 +7,8 @@ environment:
 dependencies:
   todos_repository:
     path: ../todos_repository
-  firebase_flutter_repository:
-    path: ../firebase_flutter_repository
+  firebase_todos_repository:
+    path: ../firebase_todos_repository
   flutter_architecture_samples:
     path: ../../
   blocs:

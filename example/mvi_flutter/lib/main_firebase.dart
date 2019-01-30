@@ -4,15 +4,15 @@
 
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:firebase_auth/firebase_auth.dart';
-import 'package:firebase_flutter_repository/reactive_todos_repository.dart';
-import 'package:firebase_flutter_repository/user_repository.dart';
+import 'package:firebase_todos_repository/firebase_todos_repository.dart';
+import 'package:firebase_todos_repository/firebase_user_repository.dart';
 import 'package:mvi_base/mvi_base.dart';
 import 'package:mvi_flutter_sample/main.dart' as app;
 
 void main() {
   app.main(
     todosRepository: TodosInteractor(
-      FirestoreReactiveTodosRepository(Firestore.instance),
+      FirebaseTodosRepository(Firestore.instance),
     ),
     userInteractor: UserInteractor(
       FirebaseUserRepository(FirebaseAuth.instance),

@@ -12,8 +12,8 @@ dependencies:
     sdk: flutter
   flutter_architecture_samples:
     path: ../../
-  firebase_flutter_repository:
-    path: ../firebase_flutter_repository
+  firebase_todos_repository:
+    path: ../firebase_todos_repository
 
 dev_dependencies:
   test: ^1.3.0

@@ -11,8 +11,8 @@ import 'package:fire_redux_sample/models/models.dart';
 import 'package:fire_redux_sample/presentation/home_screen.dart';
 import 'package:fire_redux_sample/reducers/app_state_reducer.dart';
 import 'package:firebase_auth/firebase_auth.dart';
-import 'package:firebase_flutter_repository/reactive_todos_repository.dart';
-import 'package:firebase_flutter_repository/user_repository.dart';
+import 'package:firebase_todos_repository/firebase_todos_repository.dart';
+import 'package:firebase_todos_repository/firebase_user_repository.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_architecture_samples/flutter_architecture_samples.dart';
 import 'package:flutter_redux/flutter_redux.dart';
@@ -41,7 +41,7 @@ class ReduxApp extends StatelessWidget {
           initialState: AppState.loading(),
           middleware: createStoreTodosMiddleware(
             todosRepository ??
-                FirestoreReactiveTodosRepository(Firestore.instance),
+                FirebaseTodosRepository(Firestore.instance),
             userRepository ?? FirebaseUserRepository(FirebaseAuth.instance),
           ),
         ),
