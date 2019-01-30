@@ -13,7 +13,7 @@ import 'package:todos_repository_base/todos_repository_base.dart';
 //
 // This class was introduced to reduce duplication in various blocs.
 class TodosInteractor {
-  final ReactiveTodosRepositoryBase repository;
+  final TodosRepositoryBase repository;
 
   TodosInteractor(this.repository);
 

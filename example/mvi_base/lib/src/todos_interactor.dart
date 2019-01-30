@@ -8,7 +8,7 @@ import 'package:mvi_base/mvi_base.dart';
 import 'package:todos_repository_base/todos_repository_base.dart';
 
 class TodosInteractor {
-  final ReactiveTodosRepositoryBase repository;
+  final TodosRepositoryBase repository;
 
   TodosInteractor(this.repository);
 
