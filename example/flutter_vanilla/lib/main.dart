@@ -5,7 +5,8 @@
 import 'package:flutter/material.dart';
 import 'package:path_provider/path_provider.dart';
 import 'package:todos_repository_simple/todos_repository_simple.dart';
-import 'package:vanilla/app.dart';
+
+import 'app.dart';
 
 void main() {
   runApp(

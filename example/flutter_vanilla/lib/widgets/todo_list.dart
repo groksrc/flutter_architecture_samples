@@ -5,10 +5,11 @@
 import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_architecture_samples/flutter_architecture_samples.dart';
-import 'package:vanilla/models.dart';
-import 'package:vanilla/screens/detail_screen.dart';
-import 'package:vanilla/widgets/todo_item.dart';
-import 'package:vanilla/widgets/typedefs.dart';
+
+import '../models.dart';
+import '../screens/detail_screen.dart';
+import '../widgets/todo_item.dart';
+import '../widgets/typedefs.dart';
 
 class TodoList extends StatelessWidget {
   final List<Todo> filteredTodos;

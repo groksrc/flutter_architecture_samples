@@ -2,7 +2,7 @@
 // Use of this source code is governed by the MIT license that can be found
 // in the LICENSE file.
 
-import 'package:vanilla/models.dart';
+import '../models.dart';
 
 typedef TodoAdder(Todo todo);
 

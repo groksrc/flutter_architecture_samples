@@ -3,7 +3,8 @@
 // in the LICENSE file.
 
 import 'package:test/test.dart';
-import 'package:vanilla/models.dart';
+
+import '../lib/models.dart';
 
 main() {
   group('AppState', () {

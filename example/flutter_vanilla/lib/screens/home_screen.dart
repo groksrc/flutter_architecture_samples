@@ -5,13 +5,14 @@
 import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_architecture_samples/flutter_architecture_samples.dart';
-import 'package:vanilla/localization.dart';
-import 'package:vanilla/models.dart';
-import 'package:vanilla/widgets/extra_actions_button.dart';
-import 'package:vanilla/widgets/filter_button.dart';
-import 'package:vanilla/widgets/stats_counter.dart';
-import 'package:vanilla/widgets/todo_list.dart';
-import 'package:vanilla/widgets/typedefs.dart';
+
+import '../localization.dart';
+import '../models.dart';
+import '../widgets/extra_actions_button.dart';
+import '../widgets/filter_button.dart';
+import '../widgets/stats_counter.dart';
+import '../widgets/todo_list.dart';
+import '../widgets/typedefs.dart';
 
 class HomeScreen extends StatefulWidget {
   final AppState appState;
