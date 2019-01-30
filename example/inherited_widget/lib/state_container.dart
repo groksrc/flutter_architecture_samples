@@ -7,7 +7,7 @@ import 'package:flutter/material.dart';
 import 'package:inherited_widget_sample/models.dart';
 import 'package:path_provider/path_provider.dart';
 import 'package:todos_repository_base/todos_repository_base.dart';
-import 'package:todos_repository/todos_repository.dart';
+import 'package:todos_repository_simple/todos_repository_simple.dart';
 
 class StateContainer extends StatefulWidget {
   final AppState state;

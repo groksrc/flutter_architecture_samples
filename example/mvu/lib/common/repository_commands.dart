@@ -3,7 +3,7 @@ import 'dart:async';
 import 'package:path_provider/path_provider.dart';
 import 'package:todos_repository_base/todos_repository_base.dart';
 
-import 'package:todos_repository/todos_repository.dart';
+import 'package:todos_repository_simple/todos_repository_simple.dart';
 import 'package:flutter_architecture_samples/uuid.dart';
 import 'package:dartea/dartea.dart';
 

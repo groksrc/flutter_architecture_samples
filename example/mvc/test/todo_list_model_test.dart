@@ -5,8 +5,8 @@
 import 'package:flutter_test/flutter_test.dart';
 import 'package:mvc/src/models.dart';
 import 'package:mvc/src/todo_list_model.dart';
-import 'package:todos_repository/todos_repository.dart';
 import 'package:todos_repository_base/todos_repository_base.dart';
+import 'package:todos_repository_simple/todos_repository_simple.dart';
 
 main() {
   group('TodoListModel', () {

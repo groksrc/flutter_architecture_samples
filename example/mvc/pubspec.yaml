@@ -15,8 +15,8 @@ dependencies:
     path: ../scoped_model
   flutter_architecture_samples:
     path: ../../
-  todos_repository:
-    path: ../todos_repository
+  todos_repository_simple:
+    path: ../todos_repository_simple
   mvc_pattern:
 
 dev_dependencies:

@@ -4,8 +4,7 @@
 
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:firebase_auth/firebase_auth.dart';
-import 'package:firebase_todos_repository/firebase_todos_repository.dart';
-import 'package:firebase_todos_repository/firebase_user_repository.dart';
+import 'package:todos_repository_firebase/todos_repository_firebase.dart';
 import 'package:mvi_base/mvi_base.dart';
 import 'package:mvi_flutter_sample/main.dart' as app;
 

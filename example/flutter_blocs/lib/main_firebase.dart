@@ -6,8 +6,7 @@ import 'package:flutter_blocs/main.dart' as app;
 import 'package:blocs/blocs.dart';
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:firebase_auth/firebase_auth.dart';
-import 'package:firebase_todos_repository/firebase_todos_repository.dart';
-import 'package:firebase_todos_repository/firebase_user_repository.dart';
+import 'package:todos_repository_firebase/todos_repository_firebase.dart';
 
 void main() {
   app.main(
