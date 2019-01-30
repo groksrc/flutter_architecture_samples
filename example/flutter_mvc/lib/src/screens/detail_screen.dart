@@ -8,9 +8,9 @@ import 'package:flutter/material.dart';
 import 'package:flutter_architecture_samples/flutter_architecture_samples.dart'
     show ArchSampleKeys, ArchSampleLocalizations;
 
-import 'package:mvc/src/screens/add_edit_screen.dart' show AddEditScreen;
+import '../controller.dart' show Con;
+import '../screens/add_edit_screen.dart' show AddEditScreen;
 
-import 'package:mvc/src/Controller.dart' show Con;
 
 class DetailScreen extends StatelessWidget {
   final String todoId;

@@ -10,7 +10,7 @@ import 'package:flutter_architecture_samples/flutter_architecture_samples.dart'
 
 /// The 'View' should know nothing of the 'Model.'
 /// The 'View' only knows how to 'talk to' the Controller.
-import 'package:mvc/src/Controller.dart' show Con;
+import '../controller.dart' show Con;
 
 class AddEditScreen extends StatefulWidget {
   final String todoId;

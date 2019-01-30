@@ -4,13 +4,10 @@
 
 import 'package:flutter/material.dart';
 import 'package:flutter_architecture_samples/flutter_architecture_samples.dart';
-import 'package:scoped_model/scoped_model.dart';
-import 'package:mvc/src/models.dart';
-import 'package:mvc/src/screens/detail_screen.dart';
-import 'package:mvc/src/todo_list_model.dart';
-import 'package:mvc/src/widgets/todo_item.dart';
 
-import 'package:mvc/src/Controller.dart';
+import '../controller.dart';
+import '../screens/detail_screen.dart';
+import '../widgets/todo_item.dart';
 
 class TodoList extends StatelessWidget {
   TodoList({Key key}) : super(key: key);

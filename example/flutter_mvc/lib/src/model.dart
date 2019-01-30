@@ -6,8 +6,7 @@ import 'dart:async' show Future;
 
 /// It is this Model that 'knows of' this class.
 /// This is to demonstrate the modular approach and 'separation of responsibilities'
-import 'package:mvc/src/todo_list_model.dart'
-    show To, TodoListModel, VisibilityFilter;
+import 'todo_list_model.dart' show To, TodoListModel, VisibilityFilter;
 
 class Model {
   final todoModel = TodoListModel();

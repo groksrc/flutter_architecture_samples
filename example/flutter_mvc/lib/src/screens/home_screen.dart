@@ -6,14 +6,12 @@ import 'package:flutter/material.dart';
 import 'package:flutter_architecture_samples/flutter_architecture_samples.dart'
     show ArchSampleKeys, ArchSampleLocalizations, ArchSampleRoutes;
 
-import 'package:mvc/src/models.dart' show AppTab;
-import 'package:mvc/src/widgets/extra_actions_button.dart'
-    show ExtraActionsButton;
-import 'package:mvc/src/widgets/filter_button.dart' show FilterButton;
-import 'package:mvc/src/widgets/stats_counter.dart' show StatsCounter;
-import 'package:mvc/src/widgets/todo_list.dart' show TodoList;
-
-import 'package:mvc/src/Controller.dart' show Con;
+import '../controller.dart' show Con;
+import '../models.dart' show AppTab;
+import '../widgets/extra_actions_button.dart' show ExtraActionsButton;
+import '../widgets/filter_button.dart' show FilterButton;
+import '../widgets/stats_counter.dart' show StatsCounter;
+import '../widgets/todo_list.dart' show TodoList;
 
 class HomeScreen extends StatefulWidget {
   @protected
