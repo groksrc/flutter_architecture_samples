@@ -7,12 +7,12 @@ import 'dart:async';
 import 'package:firebase_database/firebase_database.dart';
 import 'package:todos_repository_base/todos_repository_base.dart';
 
-class FirebaseReactiveTodosRepository implements TodosRepositoryBase {
+class FirebaseDatabaseTodosRepository implements TodosRepositoryBase {
   static const String path = 'todo';
 
   final FirebaseDatabase firebase;
 
-  const FirebaseReactiveTodosRepository(this.firebase);
+  const FirebaseDatabaseTodosRepository(this.firebase);
 
   @override
   Future<void> addNewTodo(TodoEntity todo) {
