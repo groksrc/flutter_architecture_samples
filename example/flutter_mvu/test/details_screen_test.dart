@@ -1,8 +1,8 @@
 import 'package:test/test.dart';
 
-import 'package:mvu/details/details.dart';
-import 'package:mvu/details/types.dart';
-import 'package:mvu/common/todo_model.dart';
+import '../lib/common/todo_model.dart';
+import '../lib/details/details.dart';
+import '../lib/details/types.dart';
 import 'data.dart';
 import 'cmd_runner.dart';
 
