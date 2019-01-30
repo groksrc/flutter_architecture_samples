@@ -6,8 +6,9 @@ import 'dart:async';
 
 import 'package:flutter/material.dart';
 import 'package:flutter_architecture_samples/flutter_architecture_samples.dart';
-import 'package:inherited_widget_sample/models.dart';
-import 'package:inherited_widget_sample/state_container.dart';
+
+import '../models.dart';
+import '../state_container.dart';
 
 class AddEditScreen extends StatefulWidget {
   final Todo todo;

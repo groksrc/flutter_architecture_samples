@@ -5,7 +5,8 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_architecture_samples/flutter_architecture_samples.dart';
-import 'package:inherited_widget_sample/state_container.dart';
+
+import '../state_container.dart';
 
 class StatsCounter extends StatelessWidget {
   StatsCounter() : super(key: ArchSampleKeys.statsCounter);

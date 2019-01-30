@@ -4,13 +4,14 @@
 
 import 'package:flutter/material.dart';
 import 'package:flutter_architecture_samples/flutter_architecture_samples.dart';
-import 'package:inherited_widget_sample/localization.dart';
-import 'package:inherited_widget_sample/models.dart';
-import 'package:inherited_widget_sample/state_container.dart';
-import 'package:inherited_widget_sample/widgets/extra_actions_button.dart';
-import 'package:inherited_widget_sample/widgets/filter_button.dart';
-import 'package:inherited_widget_sample/widgets/stats_counter.dart';
-import 'package:inherited_widget_sample/widgets/todo_list.dart';
+
+import '../localization.dart';
+import '../models.dart';
+import '../state_container.dart';
+import '../widgets/extra_actions_button.dart';
+import '../widgets/filter_button.dart';
+import '../widgets/stats_counter.dart';
+import '../widgets/todo_list.dart';
 
 class HomeScreen extends StatefulWidget {
   HomeScreen() : super(key: ArchSampleKeys.homeScreen);

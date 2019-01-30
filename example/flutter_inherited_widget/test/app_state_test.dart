@@ -2,8 +2,9 @@
 // Use of this source code is governed by the MIT license that can be found
 // in the LICENSE file.
 
-import 'package:inherited_widget_sample/models.dart';
 import 'package:test/test.dart';
+
+import '../lib/models.dart';
 
 main() {
   group('AppState', () {

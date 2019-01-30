@@ -5,9 +5,10 @@
 import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_architecture_samples/flutter_architecture_samples.dart';
-import 'package:inherited_widget_sample/models.dart';
-import 'package:inherited_widget_sample/screens/add_edit_screen.dart';
-import 'package:inherited_widget_sample/state_container.dart';
+
+import '../models.dart';
+import '../screens/add_edit_screen.dart';
+import '../state_container.dart';
 
 class DetailScreen extends StatelessWidget {
   final Todo todo;

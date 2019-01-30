@@ -3,8 +3,8 @@
 // in the LICENSE file.
 
 import 'package:flutter/material.dart';
-import 'package:inherited_widget_sample/app.dart';
-import 'package:inherited_widget_sample/state_container.dart';
+import 'app.dart';
+import 'state_container.dart';
 
 void main() {
   runApp(StateContainer(
