@@ -5,9 +5,9 @@
 import 'dart:async';
 
 import 'package:cloud_firestore/cloud_firestore.dart';
-import 'package:todos_repository/todos_repository.dart';
+import 'package:todos_repository_base/todos_repository_base.dart';
 
-class FirestoreReactiveTodosRepository implements ReactiveTodosRepository {
+class FirestoreReactiveTodosRepository implements TodosRepositoryBase {
   static const String path = 'todo';
 
   final Firestore firestore;

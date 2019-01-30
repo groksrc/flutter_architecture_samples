@@ -6,12 +6,13 @@ import 'package:flutter_test/flutter_test.dart';
 import 'package:mvc/src/models.dart';
 import 'package:mvc/src/todo_list_model.dart';
 import 'package:todos_repository/todos_repository.dart';
+import 'package:todos_repository_base/todos_repository_base.dart';
 
 main() {
   group('TodoListModel', () {
     test('should check if there are completed todos', () async {
       final model = TodoListModel(
-          repo: MockRepository([
+          repo: MockStorage([
         Todo('a'),
         Todo('b'),
         Todo('c', complete: true),
@@ -23,7 +24,7 @@ main() {
 
     test('should calculate the number of active todos', () async {
       final model = TodoListModel(
-          repo: MockRepository([
+          repo: MockStorage([
         Todo('a'),
         Todo('b'),
         Todo('c', complete: true),
@@ -35,7 +36,7 @@ main() {
 
     test('should calculate the number of completed todos', () async {
       final model = TodoListModel(
-          repo: MockRepository([
+          repo: MockStorage([
         Todo('a'),
         Todo('b'),
         Todo('c', complete: true),
@@ -52,7 +53,7 @@ main() {
         Todo('c', complete: true),
       ];
       final model = TodoListModel(
-          repo: MockRepository(todos),
+          repo: MockStorage(todos),
           activeFilter: VisibilityFilter.all);
       await model.loadTodos();
 
@@ -70,7 +71,7 @@ main() {
         todo3,
       ];
       final model = TodoListModel(
-        repo: MockRepository(todos),
+        repo: MockStorage(todos),
         activeFilter: VisibilityFilter.active,
       );
       await model.loadTodos();
@@ -92,7 +93,7 @@ main() {
         todo3,
       ];
       final model = TodoListModel(
-        repo: MockRepository(todos),
+        repo: MockStorage(todos),
         activeFilter: VisibilityFilter.completed,
       );
       await model.loadTodos();
@@ -110,7 +111,7 @@ main() {
         todo3,
       ];
       final model = TodoListModel(
-        repo: MockRepository(todos),
+        repo: MockStorage(todos),
       );
       await model.loadTodos();
 
@@ -132,7 +133,7 @@ main() {
         todo3,
       ];
       final model = TodoListModel(
-        repo: MockRepository(todos),
+        repo: MockStorage(todos),
       );
       await model.loadTodos();
 
@@ -147,10 +148,10 @@ main() {
   });
 }
 
-class MockRepository extends TodosRepository {
+class MockStorage extends TodosStorage {
   List<TodoEntity> entities;
 
-  MockRepository(List<Todo> todos)
+  MockStorage(List<Todo> todos)
       : this.entities = todos.map((it) => it.toEntity()).toList();
 
   @override

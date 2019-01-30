@@ -5,10 +5,10 @@
 import 'package:flutter/material.dart';
 import 'package:path_provider/path_provider.dart';
 import 'package:scoped_model_sample/app.dart';
-import 'package:todos_repository_flutter/todos_repository_flutter.dart';
+import 'package:todos_repository/todos_repository.dart';
 
 void main() {
-  var todoRepo = const TodosRepositoryFlutter(
+  var todoRepo = const TodosStorage(
     fileStorage: const FileStorage(
       'scoped_model_todos',
       getApplicationDocumentsDirectory,

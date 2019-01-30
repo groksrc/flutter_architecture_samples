@@ -9,11 +9,11 @@ library dependency_injector;
 import 'package:flutter/widgets.dart';
 import 'package:meta/meta.dart';
 import 'package:simple_blocs/simple_blocs.dart';
-import 'package:todos_repository/todos_repository.dart';
+import 'package:todos_repository_base/todos_repository_base.dart';
 
 class Injector extends InheritedWidget {
   final TodosInteractor todosInteractor;
-  final UserRepository userRepository;
+  final UserRepositoryBase userRepository;
 
   Injector({
     Key key,

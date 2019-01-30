@@ -5,10 +5,10 @@
 import 'dart:async';
 
 import 'package:mvi_base/mvi_base.dart';
-import 'package:todos_repository/todos_repository.dart';
+import 'package:todos_repository_base/todos_repository_base.dart';
 
 class TodosInteractor {
-  final ReactiveTodosRepository repository;
+  final ReactiveTodosRepositoryBase repository;
 
   TodosInteractor(this.repository);
 

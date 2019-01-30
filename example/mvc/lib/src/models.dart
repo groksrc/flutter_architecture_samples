@@ -3,7 +3,7 @@
 // in the LICENSE file.
 
 import 'package:flutter_architecture_samples/uuid.dart' show Uuid;
-import 'package:todos_repository/todos_repository.dart' show TodoEntity;
+import 'package:todos_repository_base/todos_repository_base.dart' show TodoEntity;
 
 enum AppTab { todos, stats }
 

@@ -5,7 +5,13 @@ environment:
   sdk: '>=2.0.0 <3.0.0'
 
 dependencies:
-  meta:
+  flutter:
+    sdk: flutter
+  todos_repository_base:
+    path: ../todos_repository_base
+  rxdart: 0.18.0
 
 dev_dependencies:
+  flutter_test:
+    sdk: flutter
   mockito: ^3.0.0

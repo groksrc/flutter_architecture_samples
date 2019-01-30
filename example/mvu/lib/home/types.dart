@@ -2,7 +2,7 @@ import 'package:built_value/built_value.dart';
 
 import 'package:mvu/todos/types.dart';
 import 'package:mvu/stats/types.dart';
-import 'package:todos_repository/todos_repository.dart';
+import 'package:todos_repository_base/todos_repository_base.dart';
 
 part 'types.g.dart';
 

@@ -5,14 +5,14 @@
 import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_architecture_samples/flutter_architecture_samples.dart';
-import 'package:todos_repository/todos_repository.dart';
+import 'package:todos_repository_base/todos_repository_base.dart';
 import 'package:vanilla/localization.dart';
 import 'package:vanilla/models.dart';
 import 'package:vanilla/screens/add_edit_screen.dart';
 import 'package:vanilla/screens/home_screen.dart';
 
 class VanillaApp extends StatefulWidget {
-  final TodosRepository repository;
+  final TodosStorageBase repository;
 
   VanillaApp({@required this.repository});
 

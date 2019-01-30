@@ -6,11 +6,11 @@ import 'package:fire_redux_sample/actions/actions.dart';
 import 'package:fire_redux_sample/models/models.dart';
 import 'package:fire_redux_sample/selectors/selectors.dart';
 import 'package:redux/redux.dart';
-import 'package:todos_repository/todos_repository.dart';
+import 'package:todos_repository_base/todos_repository_base.dart';
 
 List<Middleware<AppState>> createStoreTodosMiddleware(
-  ReactiveTodosRepository todosRepository,
-  UserRepository userRepository,
+  TodosRepositoryBase todosRepository,
+  UserRepositoryBase userRepository,
 ) {
   return [
     TypedMiddleware<AppState, InitAppAction>(
@@ -42,7 +42,7 @@ void Function(
   InitAppAction action,
   NextDispatcher next,
 ) _firestoreSignIn(
-  UserRepository repository,
+  UserRepositoryBase repository,
 ) {
   return (store, action, next) {
     next(action);
@@ -58,7 +58,7 @@ void Function(
   ConnectToDataSourceAction action,
   NextDispatcher next,
 ) _firestoreConnect(
-  ReactiveTodosRepository repository,
+  TodosRepositoryBase repository,
 ) {
   return (store, action, next) {
     next(action);
@@ -74,7 +74,7 @@ void Function(
   AddTodoAction action,
   NextDispatcher next,
 ) _firestoreSaveNewTodo(
-  ReactiveTodosRepository repository,
+  TodosRepositoryBase repository,
 ) {
   return (store, action, next) {
     next(action);
@@ -87,7 +87,7 @@ void Function(
   DeleteTodoAction action,
   NextDispatcher next,
 ) _firestoreDeleteTodo(
-  ReactiveTodosRepository repository,
+  TodosRepositoryBase repository,
 ) {
   return (store, action, next) {
     next(action);
@@ -100,7 +100,7 @@ void Function(
   UpdateTodoAction action,
   NextDispatcher next,
 ) _firestoreUpdateTodo(
-  ReactiveTodosRepository repository,
+  TodosRepositoryBase repository,
 ) {
   return (store, action, next) {
     next(action);
@@ -113,7 +113,7 @@ void Function(
   ToggleAllAction action,
   NextDispatcher next,
 ) _firestoreToggleAll(
-  ReactiveTodosRepository repository,
+  TodosRepositoryBase repository,
 ) {
   return (store, action, next) {
     next(action);
@@ -136,7 +136,7 @@ void Function(
   ClearCompletedAction action,
   NextDispatcher next,
 ) _firestoreClearCompleted(
-  ReactiveTodosRepository repository,
+  TodosRepositoryBase repository,
 ) {
   return (store, action, next) {
     next(action);

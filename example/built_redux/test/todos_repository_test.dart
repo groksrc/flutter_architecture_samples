@@ -5,7 +5,7 @@
 import 'dart:async';
 
 import 'package:built_redux_sample/data/file_storage.dart';
-import 'package:built_redux_sample/data/todos_repository.dart';
+import 'package:built_redux_sample/data/todos_storage.dart';
 import 'package:built_redux_sample/data/web_client.dart';
 import 'package:built_redux_sample/models/models.dart';
 import 'package:mockito/mockito.dart';
@@ -18,13 +18,13 @@ class MockFileStorage extends Mock implements FileStorage {}
 class MockWebService extends Mock implements WebClient {}
 
 main() {
-  group('TodosRepository', () {
+  group('TodosStorage', () {
     test(
         'should load todos from File Storage if they exist without calling the web service',
         () {
       final fileStorage = MockFileStorage();
       final webService = MockWebService();
-      final todosService = TodosRepository(
+      final todosService = TodosStorage(
         fileStorage: fileStorage,
         webClient: webService,
       );
@@ -44,7 +44,7 @@ main() {
         () async {
       final fileStorage = MockFileStorage();
       final webService = MockWebService();
-      final todosService = TodosRepository(
+      final todosService = TodosStorage(
         fileStorage: fileStorage,
         webClient: webService,
       );
@@ -67,7 +67,7 @@ main() {
         () async {
       final fileStorage = MockFileStorage();
       final webService = MockWebService();
-      final todosService = TodosRepository(
+      final todosService = TodosStorage(
         fileStorage: fileStorage,
         webClient: webService,
       );
@@ -84,7 +84,7 @@ main() {
     test('should persist the todos to local disk and the web service', () {
       final fileStorage = MockFileStorage();
       final webService = MockWebService();
-      final todosService = TodosRepository(
+      final todosService = TodosStorage(
         fileStorage: fileStorage,
         webClient: webService,
       );

@@ -1,9 +1,9 @@
 import 'dart:async';
 
 import 'package:path_provider/path_provider.dart';
-import 'package:todos_repository/todos_repository.dart';
+import 'package:todos_repository_base/todos_repository_base.dart';
 
-import 'package:todos_repository_flutter/todos_repository_flutter.dart';
+import 'package:todos_repository/todos_repository.dart';
 import 'package:flutter_architecture_samples/uuid.dart';
 import 'package:dartea/dartea.dart';
 
@@ -37,7 +37,7 @@ abstract class CmdRepository {
 }
 
 class TodosCmdRepository implements CmdRepository {
-  final TodosRepository _repo;
+  final TodosStorageBase _repo;
   TodosCmdRepository(this._repo);
 
   final StreamController<RepositoryEvent> _changesStreamController =
@@ -92,7 +92,7 @@ class TodosCmdRepository implements CmdRepository {
       }, onSuccess: onSuccess);
 }
 
-const _internalRepository = const TodosRepositoryFlutter(
+const _internalRepository = const TodosStorage(
   fileStorage: const FileStorage(
     "mvu_app",
     getApplicationDocumentsDirectory,

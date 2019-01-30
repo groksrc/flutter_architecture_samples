@@ -5,12 +5,12 @@
 import 'dart:async';
 
 import 'package:mvi_base/src/models/user.dart';
-import 'package:todos_repository/todos_repository.dart';
+import 'package:todos_repository_base/todos_repository_base.dart';
 
 class UserInteractor {
-  final UserRepository _repository;
+  final UserRepositoryBase _repository;
 
-  UserInteractor(UserRepository repository) : _repository = repository;
+  UserInteractor(UserRepositoryBase repository) : _repository = repository;
 
   Future<User> login() async => User((await _repository.login()).displayName);
 }

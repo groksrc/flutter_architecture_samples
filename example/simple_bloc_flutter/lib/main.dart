@@ -11,11 +11,11 @@ import 'package:simple_bloc_flutter_sample/screens/add_edit_screen.dart';
 import 'package:simple_bloc_flutter_sample/screens/home_screen.dart';
 import 'package:simple_bloc_flutter_sample/widgets/todos_bloc_provider.dart';
 import 'package:simple_blocs/simple_blocs.dart';
-import 'package:todos_repository/todos_repository.dart';
+import 'package:todos_repository_base/todos_repository_base.dart';
 
 void main({
   @required TodosInteractor todosInteractor,
-  @required UserRepository userRepository,
+  @required UserRepositoryBase userRepository,
 }) {
   runApp(Injector(
     todosInteractor: todosInteractor,

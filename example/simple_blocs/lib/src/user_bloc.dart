@@ -4,14 +4,14 @@
 
 import 'dart:async';
 
-import 'package:todos_repository/todos_repository.dart';
+import 'package:todos_repository_base/todos_repository_base.dart';
 
 class UserBloc {
-  final UserRepository _repository;
+  final UserRepositoryBase _repository;
 
   // Outputs
   Stream<UserEntity> login() =>
       _repository.login().asStream().asBroadcastStream();
 
-  UserBloc(UserRepository repository) : this._repository = repository;
+  UserBloc(UserRepositoryBase repository) : this._repository = repository;
 }

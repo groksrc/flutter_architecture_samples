@@ -12,12 +12,12 @@ import 'package:flutter/foundation.dart';
 import 'package:mockito/mockito.dart';
 import 'package:redux/redux.dart';
 import 'package:test/test.dart';
-import 'package:todos_repository/todos_repository.dart';
+import 'package:todos_repository_base/todos_repository_base.dart';
 
 class MockReactiveTodosRepository extends Mock
-    implements ReactiveTodosRepository {}
+    implements TodosRepositoryBase {}
 
-class MockUserRepository extends Mock implements UserRepository {}
+class MockUserRepository extends Mock implements UserRepositoryBase {}
 
 class MockMiddleware extends Mock implements MiddlewareClass<AppState> {}
 

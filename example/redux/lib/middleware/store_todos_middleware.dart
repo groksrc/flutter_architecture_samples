@@ -7,11 +7,11 @@ import 'package:redux/redux.dart';
 import 'package:redux_sample/actions/actions.dart';
 import 'package:redux_sample/models/models.dart';
 import 'package:redux_sample/selectors/selectors.dart';
+import 'package:todos_repository_base/todos_repository_base.dart';
 import 'package:todos_repository/todos_repository.dart';
-import 'package:todos_repository_flutter/todos_repository_flutter.dart';
 
 List<Middleware<AppState>> createStoreTodosMiddleware([
-  TodosRepository repository = const TodosRepositoryFlutter(
+  TodosStorageBase repository = const TodosStorage(
     fileStorage: const FileStorage(
       '__redux_app__',
       getApplicationDocumentsDirectory,
@@ -32,7 +32,7 @@ List<Middleware<AppState>> createStoreTodosMiddleware([
   ];
 }
 
-Middleware<AppState> _createSaveTodos(TodosRepository repository) {
+Middleware<AppState> _createSaveTodos(TodosStorageBase repository) {
   return (Store<AppState> store, action, NextDispatcher next) {
     next(action);
 
@@ -42,7 +42,7 @@ Middleware<AppState> _createSaveTodos(TodosRepository repository) {
   };
 }
 
-Middleware<AppState> _createLoadTodos(TodosRepository repository) {
+Middleware<AppState> _createLoadTodos(TodosStorageBase repository) {
   return (Store<AppState> store, action, NextDispatcher next) {
     repository.loadTodos().then(
       (todos) {

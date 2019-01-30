@@ -17,11 +17,11 @@ import 'package:flutter/material.dart';
 import 'package:flutter_architecture_samples/flutter_architecture_samples.dart';
 import 'package:flutter_redux/flutter_redux.dart';
 import 'package:redux/redux.dart';
-import 'package:todos_repository/todos_repository.dart';
+import 'package:todos_repository_base/todos_repository_base.dart';
 
 void main([
-  ReactiveTodosRepository todosRepository,
-  UserRepository userRepository,
+  TodosRepositoryBase todosRepository,
+  UserRepositoryBase userRepository,
 ]) {
   runApp(ReduxApp(
     todosRepository: todosRepository,
@@ -34,8 +34,8 @@ class ReduxApp extends StatelessWidget {
 
   ReduxApp({
     Key key,
-    ReactiveTodosRepository todosRepository,
-    UserRepository userRepository,
+    TodosRepositoryBase todosRepository,
+    UserRepositoryBase userRepository,
   })  : store = Store<AppState>(
           appReducer,
           initialState: AppState.loading(),

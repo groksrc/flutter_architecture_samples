@@ -5,9 +5,9 @@
 import 'dart:async';
 
 import 'package:firebase_auth/firebase_auth.dart';
-import 'package:todos_repository/todos_repository.dart';
+import 'package:todos_repository_base/todos_repository_base.dart';
 
-class FirebaseUserRepository implements UserRepository {
+class FirebaseUserRepository implements UserRepositoryBase {
   final FirebaseAuth auth;
 
   const FirebaseUserRepository(this.auth);

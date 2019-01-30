@@ -1,7 +1,7 @@
 import 'package:built_value/built_value.dart';
 
 import 'package:flutter_architecture_samples/uuid.dart';
-import 'package:todos_repository/todos_repository.dart';
+import 'package:todos_repository_base/todos_repository_base.dart';
 
 part 'todo_model.g.dart';
 

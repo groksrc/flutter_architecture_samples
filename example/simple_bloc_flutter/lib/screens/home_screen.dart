@@ -17,12 +17,12 @@ import 'package:simple_bloc_flutter_sample/widgets/stats_counter.dart';
 import 'package:simple_bloc_flutter_sample/widgets/todo_list.dart';
 import 'package:simple_bloc_flutter_sample/widgets/todos_bloc_provider.dart';
 import 'package:simple_blocs/simple_blocs.dart';
-import 'package:todos_repository/todos_repository.dart';
+import 'package:todos_repository_base/todos_repository_base.dart';
 
 enum AppTab { todos, stats }
 
 class HomeScreen extends StatefulWidget {
-  final UserRepository repository;
+  final UserRepositoryBase repository;
 
   HomeScreen({@required this.repository})
       : super(key: ArchSampleKeys.homeScreen);

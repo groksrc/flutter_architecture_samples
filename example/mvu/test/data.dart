@@ -2,7 +2,7 @@ import 'dart:async';
 
 import 'package:mvu/common/repository_commands.dart';
 import 'package:dartea/dartea.dart';
-import 'package:todos_repository/todos_repository.dart';
+import 'package:todos_repository_base/todos_repository_base.dart';
 
 List<TodoEntity> createTodos({bool complete}) => [
       new TodoEntity('Buy milk', '1', 'soy', complete ?? false),
@@ -29,7 +29,7 @@ List<TodoEntity> createTodosForStats(int activeCount, int completedCount) {
   return result;
 }
 
-class InMemoryTodosRepository implements TodosRepository {
+class InMemoryTodosRepository implements TodosStorageBase {
   List<TodoEntity> items = List();
   final bool isBrokern;
   InMemoryTodosRepository(

@@ -4,10 +4,10 @@ import 'package:blocs/blocs.dart';
 import 'package:blocs/src/models/models.dart';
 import 'package:mockito/mockito.dart';
 import 'package:test/test.dart';
-import 'package:todos_repository/todos_repository.dart';
+import 'package:todos_repository_base/todos_repository_base.dart';
 
 class MockReactiveTodosRepository extends Mock
-    implements ReactiveTodosRepository {}
+    implements TodosRepositoryBase {}
 
 class MockTodosListInteractor extends Mock implements TodosInteractor {}
 

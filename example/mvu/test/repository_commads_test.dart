@@ -1,7 +1,7 @@
 import 'package:test/test.dart';
 
 import 'package:mvu/common/repository_commands.dart';
-import 'package:todos_repository/todos_repository.dart';
+import 'package:todos_repository_base/todos_repository_base.dart';
 import 'cmd_runner.dart';
 import 'data.dart';
 

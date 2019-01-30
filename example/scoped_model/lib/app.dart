@@ -10,10 +10,10 @@ import 'package:scoped_model_sample/localization.dart';
 import 'package:scoped_model_sample/screens/add_edit_screen.dart';
 import 'package:scoped_model_sample/screens/home_screen.dart';
 import 'package:scoped_model_sample/todo_list_model.dart';
-import 'package:todos_repository/src/todos_repository.dart';
+import 'package:todos_repository_base/todos_repository_base.dart';
 
 class ScopedModelApp extends StatelessWidget {
-  final TodosRepository repository;
+  final TodosStorageBase repository;
 
   ScopedModelApp({
     @required this.repository,

@@ -1,6 +1,6 @@
 import 'package:built_value/built_value.dart';
 
-import 'package:todos_repository/todos_repository.dart';
+import 'package:todos_repository_base/todos_repository_base.dart';
 import 'package:mvu/common/todo_model.dart';
 
 part 'types.g.dart';

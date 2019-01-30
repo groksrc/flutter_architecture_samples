@@ -17,12 +17,12 @@ import 'package:flutter/material.dart';
 import 'package:flutter_architecture_samples/flutter_architecture_samples.dart';
 import 'package:meta/meta.dart';
 import 'package:rxdart/rxdart.dart';
-import 'package:todos_repository/todos_repository.dart';
+import 'package:todos_repository_base/todos_repository_base.dart';
 
 enum AppTab { todos, stats }
 
 class HomeScreen extends StatefulWidget {
-  final UserRepository repository;
+  final UserRepositoryBase repository;
 
   HomeScreen({@required this.repository})
       : super(key: ArchSampleKeys.homeScreen);

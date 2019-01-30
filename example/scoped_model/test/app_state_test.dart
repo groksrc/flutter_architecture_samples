@@ -5,7 +5,7 @@
 import 'package:scoped_model_sample/models.dart';
 import 'package:scoped_model_sample/todo_list_model.dart';
 import 'package:test/test.dart';
-import 'package:todos_repository/todos_repository.dart';
+import 'package:todos_repository_base/todos_repository_base.dart';
 
 main() {
   group('TodoListModel', () {
@@ -147,7 +147,7 @@ main() {
   });
 }
 
-class MockRepository extends TodosRepository {
+class MockRepository extends TodosStorageBase {
   List<TodoEntity> entities;
 
   MockRepository(List<Todo> todos)

@@ -5,10 +5,14 @@
 import 'dart:async';
 
 import 'package:blocs/blocs.dart';
-import 'package:todos_repository/todos_repository.dart';
+import 'package:todos_repository_base/todos_repository_base.dart';
+
+// Houses the functionality needed to map domain models to entities,
+// Delegates add/update/delete/list to the repository,
+// Adds additional functionality for selecting and filtering todos
 
 class TodosInteractor {
-  final ReactiveTodosRepository repository;
+  final TodosRepositoryBase repository;
 
   TodosInteractor(this.repository);
 

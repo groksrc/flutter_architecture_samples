@@ -6,17 +6,17 @@ import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'package:inherited_widget_sample/models.dart';
 import 'package:path_provider/path_provider.dart';
+import 'package:todos_repository_base/todos_repository_base.dart';
 import 'package:todos_repository/todos_repository.dart';
-import 'package:todos_repository_flutter/todos_repository_flutter.dart';
 
 class StateContainer extends StatefulWidget {
   final AppState state;
-  final TodosRepository repository;
+  final TodosStorageBase repository;
   final Widget child;
 
   StateContainer({
     @required this.child,
-    this.repository = const TodosRepositoryFlutter(
+    this.repository = const TodosStorage(
       fileStorage: const FileStorage(
         'inherited_widget_sample',
         getApplicationDocumentsDirectory,

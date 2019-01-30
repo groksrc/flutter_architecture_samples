@@ -5,9 +5,9 @@
 import 'dart:async';
 
 import 'package:firebase_database/firebase_database.dart';
-import 'package:todos_repository/todos_repository.dart';
+import 'package:todos_repository_base/todos_repository_base.dart';
 
-class FirebaseReactiveTodosRepository implements ReactiveTodosRepository {
+class FirebaseReactiveTodosRepository implements TodosRepositoryBase {
   static const String path = 'todo';
 
   final FirebaseDatabase firebase;
