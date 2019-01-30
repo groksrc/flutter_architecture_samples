@@ -6,9 +6,10 @@ import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_architecture_samples/flutter_architecture_samples.dart';
 import 'package:mvi_base/mvi_base.dart';
-import 'package:mvi_flutter_sample/dependency_injection.dart';
-import 'package:mvi_flutter_sample/screens/add_edit_screen.dart';
-import 'package:mvi_flutter_sample/widgets/loading.dart';
+
+import '../dependency_injection.dart';
+import '../screens/add_edit_screen.dart';
+import '../widgets/loading.dart';
 
 class DetailScreen extends StatefulWidget {
   final String todoId;

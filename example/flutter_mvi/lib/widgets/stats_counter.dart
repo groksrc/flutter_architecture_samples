@@ -7,7 +7,8 @@ import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_architecture_samples/flutter_architecture_samples.dart';
 import 'package:mvi_base/mvi_base.dart';
-import 'package:mvi_flutter_sample/dependency_injection.dart';
+
+import '../dependency_injection.dart';
 
 class StatsCounter extends StatefulWidget {
   final MviPresenter<StatsModel> Function() initPresenter;

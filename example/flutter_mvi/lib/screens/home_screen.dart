@@ -5,13 +5,14 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_architecture_samples/flutter_architecture_samples.dart';
 import 'package:mvi_base/mvi_base.dart';
-import 'package:mvi_flutter_sample/dependency_injection.dart';
-import 'package:mvi_flutter_sample/localization.dart';
-import 'package:mvi_flutter_sample/widgets/extra_actions_button.dart';
-import 'package:mvi_flutter_sample/widgets/filter_button.dart';
-import 'package:mvi_flutter_sample/widgets/loading.dart';
-import 'package:mvi_flutter_sample/widgets/stats_counter.dart';
-import 'package:mvi_flutter_sample/widgets/todo_list.dart';
+
+import '../dependency_injection.dart';
+import '../localization.dart';
+import '../widgets/extra_actions_button.dart';
+import '../widgets/filter_button.dart';
+import '../widgets/loading.dart';
+import '../widgets/stats_counter.dart';
+import '../widgets/todo_list.dart';
 
 enum AppTab { todos, stats }
 
