@@ -12,13 +12,12 @@ import 'package:todos_repository_base/todos_repository_base.dart';
 import '../lib/todos_repository_simple.dart';
 
 /// We create two Mocks for our Web Client and File Storage. We will use these
-/// mock classes to verify the behavior of the TodosRepository.
+/// mock classes to verify the behavior of the TodosStorage class.
 class MockFileStorage extends Mock implements FileStorage {}
-
 class MockWebClient extends Mock implements WebClient {}
 
 main() {
-  group('TodosRepository', () {
+  group('TodosStorage', () {
     List<TodoEntity> createTodos() {
       return [TodoEntity("Task", "1", "Hallo", false)];
     }
@@ -28,7 +27,7 @@ main() {
         () {
       final fileStorage = MockFileStorage();
       final webClient = MockWebClient();
-      final repository = TodosStorage(
+      final todosStorage = TodosStorage(
         fileStorage: fileStorage,
         webClient: webClient,
       );
@@ -39,7 +38,7 @@ main() {
       // list of Todos that we define here in our test!
       when(fileStorage.loadTodos()).thenAnswer((_) => Future.value(todos));
 
-      expect(repository.loadTodos(), completion(todos));
+      expect(todosStorage.loadTodos(), completion(todos));
       verifyNever(webClient.fetchTodos());
     });
 
@@ -48,7 +47,7 @@ main() {
         () async {
       final fileStorage = MockFileStorage();
       final webClient = MockWebClient();
-      final repository = TodosStorage(
+      final todosStorage = TodosStorage(
         fileStorage: fileStorage,
         webClient: webClient,
       );
@@ -61,7 +60,7 @@ main() {
 
       // We check that the correct todos were returned, and that the
       // webClient.fetchTodos method was in fact called!
-      expect(await repository.loadTodos(), todos);
+      expect(await todosStorage.loadTodos(), todos);
       verify(webClient.fetchTodos());
     });
 
@@ -70,7 +69,7 @@ main() {
         () async {
       final fileStorage = MockFileStorage();
       final webClient = MockWebClient();
-      final repository = TodosStorage(
+      final todosStorage = TodosStorage(
         fileStorage: fileStorage,
         webClient: webClient,
       );
@@ -79,14 +78,14 @@ main() {
       when(fileStorage.loadTodos()).thenThrow(Exception("Oh no."));
       when(webClient.fetchTodos()).thenAnswer((_) => Future.value(todos));
 
-      expect(await repository.loadTodos(), todos);
+      expect(await todosStorage.loadTodos(), todos);
       verify(webClient.fetchTodos());
     });
 
     test('should persist the todos to local disk and the web client', () {
       final fileStorage = MockFileStorage();
       final webClient = MockWebClient();
-      final repository = TodosStorage(
+      final todosStorage = TodosStorage(
         fileStorage: fileStorage,
         webClient: webClient,
       );
@@ -98,7 +97,7 @@ main() {
 
       // In this case, we just want to verify we're correctly persisting to all
       // the storage mechanisms we care about.
-      expect(repository.saveTodos(todos), completes);
+      expect(todosStorage.saveTodos(todos), completes);
       verify(fileStorage.saveTodos(todos));
       verify(webClient.postTodos(todos));
     });

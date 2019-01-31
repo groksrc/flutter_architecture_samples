@@ -9,7 +9,7 @@ import 'package:todos_repository_base/todos_repository_base.dart';
 
 import '../lib/todos_repository_simple.dart';
 
-main() {
+void main() {
   group('FileStorage', () {
     final todos = [TodoEntity("Task", "1", "Hallo", false)];
     final directory = Directory.systemTemp.createTemp('__storage_test__');
