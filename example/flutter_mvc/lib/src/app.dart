@@ -5,9 +5,9 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_architecture_samples/flutter_architecture_samples.dart';
 import 'package:mvc_pattern/mvc_pattern.dart';
-import 'package:flutter_scoped_model/localization.dart';
 
 import 'controller.dart';
+import 'localization.dart';
 import 'screens/add_edit_screen.dart';
 import 'screens/home_screen.dart';
 
