@@ -1,9 +1,9 @@
 import 'dart:async';
 
-import 'package:blocs/blocs.dart';
-import 'package:blocs/src/models/models.dart';
 import 'package:mockito/mockito.dart';
 import 'package:test/test.dart';
+
+import '../lib/flutter_blocs_base.dart';
 
 class MockTodosInteractor extends Mock implements TodosInteractor {}
 

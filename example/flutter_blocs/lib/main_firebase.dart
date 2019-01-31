@@ -3,7 +3,7 @@
 // in the LICENSE file.
 
 import 'package:flutter_blocs/main.dart' as app;
-import 'package:blocs/blocs.dart';
+import 'package:flutter_blocs_base/flutter_blocs_base.dart';
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:todos_repository_firebase/todos_repository_firebase.dart';

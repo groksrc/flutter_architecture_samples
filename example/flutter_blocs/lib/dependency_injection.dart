@@ -6,7 +6,7 @@
 // are more stable.
 library dependency_injector;
 
-import 'package:blocs/blocs.dart';
+import 'package:flutter_blocs_base/flutter_blocs_base.dart';
 import 'package:flutter/widgets.dart';
 import 'package:meta/meta.dart';
 import 'package:todos_repository_base/todos_repository_base.dart';

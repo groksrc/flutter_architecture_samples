@@ -4,7 +4,7 @@
 
 import 'dart:async';
 
-import 'package:blocs/blocs.dart';
+import 'package:flutter_blocs_base/flutter_blocs_base.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_architecture_samples/flutter_architecture_samples.dart';
 

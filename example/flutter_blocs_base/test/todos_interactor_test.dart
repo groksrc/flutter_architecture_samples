@@ -4,11 +4,12 @@
 
 import 'dart:async';
 
-import 'package:blocs/blocs.dart';
 import 'package:mockito/mockito.dart';
 import 'package:rxdart/rxdart.dart';
 import 'package:test/test.dart';
 import 'package:todos_repository_base/todos_repository_base.dart';
+
+import '../lib/flutter_blocs_base.dart';
 
 class MockReactiveTodosRepository extends Mock
     implements TodosRepositoryBase {}

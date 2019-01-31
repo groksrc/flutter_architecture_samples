@@ -2,9 +2,10 @@
 // Use of this source code is governed by the MIT license that can be found
 // in the LICENSE file.
 
-import 'package:blocs/src/uuid.dart';
 import 'package:meta/meta.dart';
 import 'package:todos_repository_base/todos_repository_base.dart';
+
+import '../uuid.dart';
 
 @immutable
 class Todo {

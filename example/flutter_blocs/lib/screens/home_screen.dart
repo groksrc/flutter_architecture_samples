@@ -12,7 +12,7 @@ import 'package:flutter_blocs/widgets/loading.dart';
 import 'package:flutter_blocs/widgets/stats_counter.dart';
 import 'package:flutter_blocs/widgets/todo_list.dart';
 import 'package:flutter_blocs/widgets/todos_bloc_provider.dart';
-import 'package:blocs/blocs.dart';
+import 'package:flutter_blocs_base/flutter_blocs_base.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_architecture_samples/flutter_architecture_samples.dart';
 import 'package:meta/meta.dart';

@@ -9,7 +9,7 @@ Created from templates made available by Stagehand under a BSD-style
 
 A simple usage example:
 
-    import 'package:blocs/blocs.dart';
+    import 'package:flutter_blocs_base/blocs.dart';
 
     main() {
       var awesome = new Awesome();

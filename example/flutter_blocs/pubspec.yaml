@@ -11,8 +11,8 @@ dependencies:
     path: ../todos_repository_firebase
   flutter_architecture_samples:
     path: ../../
-  blocs:
-    path: ../blocs
+  flutter_blocs_base:
+    path: ../flutter_blocs_base
   flutter:
     sdk: flutter
   rxdart: 0.18.0

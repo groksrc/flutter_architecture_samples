@@ -1,4 +1,4 @@
-name: blocs
+name: flutter_blocs_base
 description: The Business Logic Components for a Todo App
 
 environment:

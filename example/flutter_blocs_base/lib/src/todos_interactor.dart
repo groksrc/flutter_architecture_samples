@@ -4,8 +4,9 @@
 
 import 'dart:async';
 
-import 'package:blocs/blocs.dart';
 import 'package:todos_repository_base/todos_repository_base.dart';
+
+import '../flutter_blocs_base.dart';
 
 // Houses the functionality needed to map domain models to entities,
 // Delegates add/update/delete/list to the repository,

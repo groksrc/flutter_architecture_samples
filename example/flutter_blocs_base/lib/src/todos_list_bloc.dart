@@ -4,9 +4,10 @@
 
 import 'dart:async';
 
-import 'package:blocs/src/models/models.dart';
-import 'package:blocs/src/todos_interactor.dart';
 import 'package:rxdart/rxdart.dart';
+
+import 'models/models.dart';
+import 'todos_interactor.dart';
 
 class TodosListBloc {
   // Inputs

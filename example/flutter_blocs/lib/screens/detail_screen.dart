@@ -4,7 +4,7 @@
 
 import 'package:flutter_blocs/screens/add_edit_screen.dart';
 import 'package:flutter_blocs/widgets/loading.dart';
-import 'package:blocs/blocs.dart';
+import 'package:flutter_blocs_base/flutter_blocs_base.dart';
 import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_architecture_samples/flutter_architecture_samples.dart';

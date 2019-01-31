@@ -2,10 +2,11 @@
 // Use of this source code is governed by the MIT license that can be found
 // in the LICENSE file.
 
-import 'package:blocs/blocs.dart';
 import 'package:mockito/mockito.dart';
 import 'package:rxdart/rxdart.dart';
 import 'package:test/test.dart';
+
+import '../lib/flutter_blocs_base.dart';
 
 class MockTodosInteractor extends Mock implements TodosInteractor {}
 
