@@ -6,7 +6,7 @@ import 'dart:async';
 
 import 'package:flutter/material.dart';
 import 'package:flutter_architecture_samples/flutter_architecture_samples.dart';
-import 'package:flutter_mvi_base/mvi_base.dart';
+import 'package:flutter_mvi_base/flutter_mvi_base.dart';
 
 class AddEditScreen extends StatefulWidget {
   final Todo todo;

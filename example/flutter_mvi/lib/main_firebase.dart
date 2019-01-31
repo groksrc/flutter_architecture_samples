@@ -5,7 +5,7 @@
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:todos_repository_firebase/todos_repository_firebase.dart';
-import 'package:flutter_mvi_base/mvi_base.dart';
+import 'package:flutter_mvi_base/flutter_mvi_base.dart';
 
 import 'main.dart' as app;
 
