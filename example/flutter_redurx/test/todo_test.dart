@@ -1,6 +1,7 @@
 import 'package:built_value/serializer.dart';
-import 'package:redurx_sample/models/todo.dart';
 import 'package:test/test.dart';
+
+import '../lib/models/todo.dart';
 
 void main() {
   group('Todo', () {

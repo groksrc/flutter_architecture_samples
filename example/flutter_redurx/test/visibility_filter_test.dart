@@ -1,7 +1,8 @@
 import 'package:built_collection/built_collection.dart';
 import 'package:built_value/serializer.dart';
-import 'package:redurx_sample/models/visibility_filter.dart';
 import 'package:test/test.dart';
+
+import '../lib/models/visibility_filter.dart';
 
 void main() {
   group('VisibilityFilter', () {

@@ -1,7 +1,8 @@
-import 'package:redurx_sample/models/app_state.dart';
-import 'package:redurx_sample/models/todo.dart';
-import 'package:redurx_sample/models/visibility_filter.dart';
 import 'package:test/test.dart';
+
+import '../lib/models/app_state.dart';
+import '../lib/models/todo.dart';
+import '../lib/models/visibility_filter.dart';
 
 main() {
   group('Selector Tests', () {
