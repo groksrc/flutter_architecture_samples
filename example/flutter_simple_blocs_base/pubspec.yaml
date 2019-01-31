@@ -7,6 +7,8 @@ environment:
 dependencies:
   todos_repository_base:
     path: ../todos_repository_base
+  flutter_architecture_samples:
+    path: ../../
   rxdart: ^0.18.0
 
 dev_dependencies:

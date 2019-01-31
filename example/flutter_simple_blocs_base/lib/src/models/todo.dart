@@ -4,8 +4,7 @@
 
 import 'package:meta/meta.dart';
 import 'package:todos_repository_base/todos_repository_base.dart';
-
-import '../uuid.dart';
+import 'package:flutter_architecture_samples/uuid.dart';
 
 @immutable
 class Todo {
