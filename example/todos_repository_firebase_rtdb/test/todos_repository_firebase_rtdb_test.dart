@@ -10,7 +10,7 @@ import 'package:mockito/mockito.dart';
 import 'package:test/test.dart';
 import 'package:todos_repository_base/todos_repository_base.dart';
 
-import '../lib/firebase_rtdb_todos_repository.dart';
+import '../lib/todos_repository_firebase_rtdb.dart';
 
 main() {
   group('FirebaseUserRepository', () {
