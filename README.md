@@ -21,13 +21,13 @@ Examples have been updated to Dart 2.
   * [InheritedWidget Example](example/flutter_inherited_widget) - Uses an InheritedWidget to pass app state down the widget hierarchy.
   * [BLoC Example](example/flutter_blocs) - An implementation of the BLoC pattern, which uses Sinks for Inputs and Streams for Ouputs. Separates the BLoC library from the UI library. Blocs are defined in [flutter_blocs_base](example/flutter_blocs_base).
   * ["Simple" BLoC Example](example/flutter_simple_blocs) - Similar to the BLoC pattern, but uses Functions for Inputs and Streams for Outputs. Results in far less code compared to standard BLoC.
-  * [Redux Example](example/flutter_flutter_redux) - Uses the [Redux](https://pub.dartlang.org/packages/redux) and [flutter_redux](https://pub.dartlang.org/packages/flutter_redux) libraries to manage app state and update Widgets
+  * [Redux Example](example/flutter_redux) - Uses the [Redux](https://pub.dartlang.org/packages/redux) and [flutter_redux](https://pub.dartlang.org/packages/flutter_redux) libraries to manage app state and update Widgets
   * [built_redux Example](example/built_redux) - Uses the [built_redux](https://pub.dartlang.org/packages/built_redux) library to enforce immutability and manage app state
   * [scoped_model Example](example/flutter_scoped_model) - Uses the [scoped_model](https://pub.dartlang.org/packages/scoped_model) library to hold app state and notify Widgets of Updates
   * [Firestore Redux Example](example/flutter_firestore_redux) - Uses the [Redux](https://pub.dartlang.org/packages/redux) library to manage app state and update Widgets and
   adds [Cloud_Firestore](https://firebase.google.com/docs/firestore/) as the Todos database.
   * [MVU Example](example/flutter_mvu) - Uses the [dartea](https://pub.dartlang.org/packages/dartea) library to manage app state and update Widgets.
-  * [ReduRx Example](example/flutter_flutter_redurx) - Uses the [redurx](https://pub.dartlang.org/packages/redurx) + [flutter_redurx](https://pub.dartlang.org/packages/flutter_redurx) libraries as a new way to handle state using RxDart and StreamBuilder based on a Redux store.
+  * [ReduRx Example](example/flutter_redurx) - Uses the [redurx](https://pub.dartlang.org/packages/redurx) + [flutter_redurx](https://pub.dartlang.org/packages/flutter_redurx) libraries as a new way to handle state using RxDart and StreamBuilder based on a Redux store.
   * [MVI Example](example/flutter_mvi) - Uses the concepts from Cycle.JS and applies them to Flutter.
   * [MVC Example](example/flutter_mvc) - Uses the [MVC](https://pub.dartlang.org/packages/mvc_pattern) library to implement the traditional MVC design pattern.
 
