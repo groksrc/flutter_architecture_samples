@@ -17,8 +17,8 @@ class StatsCounter extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    var numCompleted = Con.model.todos.where(isCompleted).toList().length;
-    var numActive = Con.todos.where(isActive).toList().length;
+    var numCompleted = Controller.model.todos.where(isCompleted).toList().length;
+    var numActive = Controller.todos.where(isActive).toList().length;
     return Center(
       child: Column(
         mainAxisAlignment: MainAxisAlignment.center,

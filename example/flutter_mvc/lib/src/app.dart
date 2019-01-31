@@ -15,7 +15,7 @@ class MVCApp extends AppMVC {
   MVCApp({Key key}) : super(con: _controller, key: key);
 
   /// An external reference to the Controller if you wish. -gp
-  static final Con _controller = Con();
+  static final Controller _controller = Controller();
 
   static MaterialApp _app;
 

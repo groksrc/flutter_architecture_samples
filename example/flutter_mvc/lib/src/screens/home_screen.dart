@@ -6,7 +6,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_architecture_samples/flutter_architecture_samples.dart'
     show ArchSampleKeys, ArchSampleLocalizations, ArchSampleRoutes;
 
-import '../controller.dart' show Con;
+import '../controller.dart' show Controller;
 import '../models.dart' show AppTab;
 import '../widgets/extra_actions_button.dart' show ExtraActionsButton;
 import '../widgets/filter_button.dart' show FilterButton;
@@ -22,7 +22,7 @@ class HomeScreen extends StatefulWidget {
 class HomeView extends State<HomeScreen> {
   AppTab _activeTab = AppTab.todos;
 
-  final Con _con = Con.con;
+  final Controller _con = Controller.instance;
 
   @protected
   @override

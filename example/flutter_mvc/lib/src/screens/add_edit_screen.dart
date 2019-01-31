@@ -10,7 +10,7 @@ import 'package:flutter_architecture_samples/flutter_architecture_samples.dart'
 
 /// The 'View' should know nothing of the 'Model.'
 /// The 'View' only knows how to 'talk to' the Controller.
-import '../controller.dart' show Con;
+import '../controller.dart' show Controller;
 
 class AddEditScreen extends StatefulWidget {
   final String todoId;
@@ -27,7 +27,7 @@ class AddEditScreen extends StatefulWidget {
 class _AddEditScreenState extends State<AddEditScreen> {
   static final GlobalKey<FormState> formKey = GlobalKey<FormState>();
 
-  final Con _con = Con.con;
+  final Controller _con = Controller.instance;
   String _task;
   String _note;
 

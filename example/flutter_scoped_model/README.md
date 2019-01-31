@@ -1,8 +1,4 @@
-# scoped_model
+# flutter_scoped_model
 
-A new Flutter project.
+A Flutter Architecture Sample using the [scoped_model](https://pub.dartlang.org/packages/scoped_model) library.
 
-## Getting Started
-
-For help getting started with Flutter, view our online
-[documentation](http://flutter.io/).

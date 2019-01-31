@@ -12,12 +12,12 @@ import '../widgets/todo_item.dart';
 class TodoList extends StatelessWidget {
   TodoList({Key key}) : super(key: key);
 
-  static final _con = Con.con;
+  static final _controller = Controller.instance;
 
   @override
   Widget build(BuildContext context) {
     return Container(
-      child: Con.isLoading ? _buildLoading : _buildList(),
+      child: Controller.isLoading ? _buildLoading : _buildList(),
     );
   }
 
@@ -30,7 +30,7 @@ class TodoList extends StatelessWidget {
   }
 
   ListView _buildList() {
-    final todos = Con.filteredTodos;
+    final todos = Controller.filteredTodos;
     return ListView.builder(
       key: ArchSampleKeys.todoList,
       itemCount: todos.length,
@@ -57,7 +57,7 @@ class TodoList extends StatelessWidget {
             });
           },
           onCheckboxChanged: (complete) {
-            _con.checked(todo);
+            _controller.checked(todo);
           },
         );
       },
@@ -65,7 +65,7 @@ class TodoList extends StatelessWidget {
   }
 
   void _removeTodo(BuildContext context, Map todo) {
-    _con.remove(todo);
+    _controller.remove(todo);
     _showUndoSnackbar(context, todo);
   }
 
@@ -84,7 +84,7 @@ class TodoList extends StatelessWidget {
           key: ArchSampleKeys.snackbarAction(todo['id']),
           label: ArchSampleLocalizations.of(context).undo,
           onPressed: () {
-            _con.undo(todo);
+            _controller.undo(todo);
           },
         ),
       ),

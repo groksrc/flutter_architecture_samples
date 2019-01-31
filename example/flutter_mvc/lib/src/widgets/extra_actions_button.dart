@@ -13,7 +13,7 @@ class ExtraActionsButton extends StatelessWidget {
     Key key,
   }) : super(key: key);
 
-  final con = Con.con;
+  final con = Controller.instance;
 
   @override
   Widget build(BuildContext context) {
@@ -31,7 +31,7 @@ class ExtraActionsButton extends StatelessWidget {
             PopupMenuItem<ExtraAction>(
               key: ArchSampleKeys.toggleAll,
               value: ExtraAction.toggleAllComplete,
-              child: Text(Con.todos.any((it) => !it['complete'])
+              child: Text(Controller.todos.any((it) => !it['complete'])
                   ? ArchSampleLocalizations.of(context).markAllComplete
                   : ArchSampleLocalizations.of(context).markAllIncomplete),
             ),

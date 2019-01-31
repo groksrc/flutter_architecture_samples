@@ -8,14 +8,14 @@ import 'package:flutter/material.dart';
 import 'package:flutter_architecture_samples/flutter_architecture_samples.dart'
     show ArchSampleKeys, ArchSampleLocalizations;
 
-import '../controller.dart' show Con;
+import '../controller.dart' show Controller;
 import '../screens/add_edit_screen.dart' show AddEditScreen;
 
 
 class DetailScreen extends StatelessWidget {
   final String todoId;
 
-  final Con con = Con.con;
+  final Controller con = Controller.instance;
 
   DetailScreen({
     @required this.todoId,

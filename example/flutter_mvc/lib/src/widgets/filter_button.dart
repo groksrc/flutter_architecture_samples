@@ -14,7 +14,7 @@ class FilterButton extends StatelessWidget {
 
   FilterButton({this.isActive, Key key}) : super(key: key);
 
-  final con = Con.con;
+  final con = Controller.instance;
 
   @override
   Widget build(BuildContext context) {
@@ -26,7 +26,7 @@ class FilterButton extends StatelessWidget {
         key: ArchSampleKeys.filterButton,
         tooltip: ArchSampleLocalizations.of(context).filterTodos,
         onSelected: (filter) {
-          Con.activeFilter = filter;
+          Controller.activeFilter = filter;
           con.refresh();
         },
         itemBuilder: (BuildContext context) => _items(context),
@@ -48,7 +48,7 @@ class FilterButton extends StatelessWidget {
         value: VisibilityFilter.all,
         child: Text(
           ArchSampleLocalizations.of(context).showAll,
-          style: Con.activeFilter == VisibilityFilter.all
+          style: Controller.activeFilter == VisibilityFilter.all
               ? activeStyle
               : defaultStyle,
         ),
@@ -58,7 +58,7 @@ class FilterButton extends StatelessWidget {
         value: VisibilityFilter.active,
         child: Text(
           ArchSampleLocalizations.of(context).showActive,
-          style: Con.activeFilter == VisibilityFilter.active
+          style: Controller.activeFilter == VisibilityFilter.active
               ? activeStyle
               : defaultStyle,
         ),
@@ -68,7 +68,7 @@ class FilterButton extends StatelessWidget {
         value: VisibilityFilter.completed,
         child: Text(
           ArchSampleLocalizations.of(context).showCompleted,
-          style: Con.activeFilter == VisibilityFilter.completed
+          style: Controller.activeFilter == VisibilityFilter.completed
               ? activeStyle
               : defaultStyle,
         ),

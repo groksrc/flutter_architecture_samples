@@ -8,11 +8,11 @@ import 'package:todos_repository_base/todos_repository_base.dart';
 
 import '../flutter_simple_blocs_base.dart';
 
-// The "Use Case" part of the domain layer. It is built to talk to the
-// repository layer and convert Entities into the Domain Models found in the
-// models directory and vice-versa.
-//
-// This class was introduced to reduce duplication in various blocs.
+/// The "Use Case" part of the domain layer. It is built to talk to the
+/// repository layer and convert Entities into the Domain Models found in the
+/// models directory and vice-versa.
+///
+/// This class was introduced to reduce duplication in various blocs.
 class TodosInteractor {
   final TodosRepositoryBase repository;
 
