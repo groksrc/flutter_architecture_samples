@@ -22,7 +22,7 @@ Examples have been updated to Dart 2.
   * [BLoC Example](example/flutter_blocs) - An implementation of the BLoC pattern, which uses Sinks for Inputs and Streams for Ouputs. Separates the BLoC library from the UI library. Blocs are defined in [flutter_blocs_base](example/flutter_blocs_base).
   * ["Simple" BLoC Example](example/flutter_simple_blocs) - Similar to the BLoC pattern, but uses Functions for Inputs and Streams for Outputs. Results in far less code compared to standard BLoC.
   * [Redux Example](example/flutter_redux) - Uses the [Redux](https://pub.dartlang.org/packages/redux) and [flutter_redux](https://pub.dartlang.org/packages/flutter_redux) libraries to manage app state and update Widgets
-  * [built_redux Example](example/built_redux) - Uses the [built_redux](https://pub.dartlang.org/packages/built_redux) library to enforce immutability and manage app state
+  * [built_redux Example](example/flutter_built_redux) - Uses the [built_redux](https://pub.dartlang.org/packages/built_redux) library to enforce immutability and manage app state
   * [scoped_model Example](example/flutter_scoped_model) - Uses the [scoped_model](https://pub.dartlang.org/packages/scoped_model) library to hold app state and notify Widgets of Updates
   * [Firestore Redux Example](example/flutter_firestore_redux) - Uses the [Redux](https://pub.dartlang.org/packages/redux) library to manage app state and update Widgets and
   adds [Cloud_Firestore](https://firebase.google.com/docs/firestore/) as the Todos database.
@@ -36,6 +36,8 @@ Examples have been updated to Dart 2.
 
 * [todos_repository_base](example/todos_repository_base) - Defines foundational base classes that every implementation should use including the shape of the Repository and Entities.
 * [todos_repository_simple](example/todos_repository_simple) - Demonstrates implementing the repository pattern and testing strategies for working with the filesystem. Used to provide local storage and mock web storage to samples.
+* [todos_repository_firebase](example/todos_repository_firebase) - Demonstrates implementing the repository pattern and testing strategies for using the [Firebase Cloud Firestore](https://firebase.google.com/docs/firestore/) as the backing store.
+* [todos_repository_firebase_rtdb](example/todos_repository_firebase_rtdb) - Demonstrates implementing the repository pattern and testing strategies for using the [Firebase Realtime Database](https://firebase.google.com/docs/database/) as the backing store.
 * [integration_tests](example/integration_tests) - Demonstrates how to write selenium-style integration (aka end to end) tests using the Page Object Model. This test suite is run against all samples.
 
 ### Why a todo app?
