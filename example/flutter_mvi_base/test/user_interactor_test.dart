@@ -5,9 +5,10 @@
 import 'dart:async';
 
 import 'package:mockito/mockito.dart';
-import 'package:mvi_base/mvi_base.dart';
 import 'package:test/test.dart';
 import 'package:todos_repository_base/todos_repository_base.dart';
+
+import '../lib/flutter_mvi_base.dart';
 
 class MockUserRepository extends Mock implements UserRepositoryBase {}
 

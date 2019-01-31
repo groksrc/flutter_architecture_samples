@@ -5,9 +5,11 @@
 import 'dart:async';
 
 import 'package:mockito/mockito.dart';
-import 'package:mvi_base/mvi_base.dart';
-import 'package:mvi_base/src/models/models.dart';
 import 'package:test/test.dart';
+
+import '../lib/flutter_mvi_base.dart';
+import '../lib/src/models/models.dart';
+
 
 class MockTodosListInteractor extends Mock implements TodosInteractor {}
 

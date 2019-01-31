@@ -5,7 +5,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_architecture_samples/flutter_architecture_samples.dart';
 import 'package:meta/meta.dart';
-import 'package:mvi_base/mvi_base.dart';
+import 'package:flutter_mvi_base/mvi_base.dart';
 
 import 'dependency_injection.dart';
 import 'localization.dart';

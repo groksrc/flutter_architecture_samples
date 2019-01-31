@@ -8,7 +8,7 @@ library dependency_injector;
 
 import 'package:flutter/widgets.dart';
 import 'package:meta/meta.dart';
-import 'package:mvi_base/mvi_base.dart';
+import 'package:flutter_mvi_base/mvi_base.dart';
 
 class Injector extends InheritedWidget {
   final TodosInteractor todosInteractor;

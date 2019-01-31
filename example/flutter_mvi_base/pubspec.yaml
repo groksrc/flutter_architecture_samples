@@ -1,4 +1,4 @@
-name: mvi_base
+name: flutter_mvi_base
 description: The MI parts of an MVI app.
 
 environment:

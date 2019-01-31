@@ -4,8 +4,9 @@
 
 import 'dart:async';
 
-import 'package:mvi_base/mvi_base.dart';
 import 'package:todos_repository_base/todos_repository_base.dart';
+
+import '../flutter_mvi_base.dart';
 
 class TodosInteractor {
   final TodosRepositoryBase repository;

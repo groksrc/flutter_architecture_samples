@@ -5,8 +5,9 @@
 import 'dart:async';
 
 import 'package:mockito/mockito.dart';
-import 'package:mvi_base/mvi_base.dart';
 import 'package:test/test.dart';
+
+import '../lib/flutter_mvi_base.dart';
 
 class MockTodosInteractor extends Mock implements TodosInteractor {}
 

@@ -11,8 +11,8 @@ dependencies:
     path: ../todos_repository_firebase
   flutter_architecture_samples:
     path: ../../
-  mvi_base:
-    path: ../mvi_base
+  flutter_mvi_base:
+    path: ../flutter_mvi_base
   flutter:
     sdk: flutter
   rxdart: 0.18.0

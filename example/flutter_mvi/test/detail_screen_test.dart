@@ -6,8 +6,8 @@ import 'dart:async';
 
 import 'package:flutter/material.dart';
 import 'package:flutter_architecture_samples/flutter_architecture_samples.dart';
+import 'package:flutter_mvi_base/mvi_base.dart';
 import 'package:flutter_test/flutter_test.dart';
-import 'package:mvi_base/mvi_base.dart';
 import 'package:test/test.dart' as test;
 
 import '../lib/screens/detail_screen.dart';

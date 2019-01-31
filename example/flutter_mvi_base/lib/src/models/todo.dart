@@ -3,8 +3,9 @@
 // in the LICENSE file.
 
 import 'package:meta/meta.dart';
-import 'package:mvi_base/src/uuid.dart';
 import 'package:todos_repository_base/todos_repository_base.dart';
+
+import '../uuid.dart';
 
 @immutable
 class Todo {
