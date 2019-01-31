@@ -5,12 +5,13 @@
 import 'dart:async';
 
 import 'package:meta/meta.dart';
-import 'package:mvi_base/src/models/models.dart';
-import 'package:mvi_base/src/models/user.dart';
-import 'package:mvi_base/src/mvi_core.dart';
-import 'package:mvi_base/src/todos_interactor.dart';
-import 'package:mvi_base/src/user_interactor.dart';
 import 'package:rxdart/rxdart.dart';
+
+import 'models/models.dart';
+import 'models/user.dart';
+import 'mvi_core.dart';
+import 'todos_interactor.dart';
+import 'user_interactor.dart';
 
 class TodosListModel {
   final VisibilityFilter activeFilter;

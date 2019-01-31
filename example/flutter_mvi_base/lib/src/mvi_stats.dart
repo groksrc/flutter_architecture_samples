@@ -2,9 +2,11 @@
 // Use of this source code is governed by the MIT license that can be found
 // in the LICENSE file.
 
-import 'package:mvi_base/mvi_base.dart';
-import 'package:mvi_base/src/mvi_core.dart';
 import 'package:rxdart/rxdart.dart';
+
+import 'models/models.dart';
+import 'todos_interactor.dart';
+import 'mvi_core.dart';
 
 class StatsPresenter extends MviPresenter<StatsModel> {
   StatsPresenter(TodosInteractor interactor)
