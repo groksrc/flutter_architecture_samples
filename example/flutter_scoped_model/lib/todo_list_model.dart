@@ -7,8 +7,9 @@ import 'dart:async';
 import 'package:flutter/widgets.dart';
 import 'package:meta/meta.dart';
 import 'package:scoped_model/scoped_model.dart';
-import 'package:scoped_model_sample/models.dart';
 import 'package:todos_repository_base/todos_repository_base.dart';
+
+import 'models.dart';
 
 class TodoListModel extends Model {
   final TodosStorageBase repository;

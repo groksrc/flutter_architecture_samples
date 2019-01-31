@@ -2,10 +2,11 @@
 // Use of this source code is governed by the MIT license that can be found
 // in the LICENSE file.
 
-import 'package:scoped_model_sample/models.dart';
-import 'package:scoped_model_sample/todo_list_model.dart';
 import 'package:test/test.dart';
 import 'package:todos_repository_base/todos_repository_base.dart';
+
+import '../lib/models.dart';
+import '../lib/todo_list_model.dart';
 
 main() {
   group('TodoListModel', () {

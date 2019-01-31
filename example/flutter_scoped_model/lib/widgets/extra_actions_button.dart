@@ -5,8 +5,9 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_architecture_samples/flutter_architecture_samples.dart';
 import 'package:scoped_model/scoped_model.dart';
-import 'package:scoped_model_sample/models.dart';
-import 'package:scoped_model_sample/todo_list_model.dart';
+
+import '../models.dart';
+import '../todo_list_model.dart';
 
 class ExtraActionsButton extends StatelessWidget {
   ExtraActionsButton({

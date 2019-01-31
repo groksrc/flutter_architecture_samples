@@ -4,8 +4,9 @@
 
 import 'package:flutter/material.dart';
 import 'package:path_provider/path_provider.dart';
-import 'package:scoped_model_sample/app.dart';
 import 'package:todos_repository_simple/todos_repository_simple.dart';
+
+import 'app.dart';
 
 void main() {
   var todoRepo = const TodosStorage(
