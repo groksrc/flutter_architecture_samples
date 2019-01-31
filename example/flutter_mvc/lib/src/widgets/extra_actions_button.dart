@@ -4,8 +4,8 @@
 
 import 'package:flutter/material.dart';
 import 'package:flutter_architecture_samples/flutter_architecture_samples.dart';
-import 'package:scoped_model_sample/models.dart';
 
+import '../models.dart';
 import '../controller.dart';
 
 class ExtraActionsButton extends StatelessWidget {

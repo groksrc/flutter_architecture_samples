@@ -11,8 +11,6 @@ environment:
 dependencies:
   flutter:
     sdk: flutter
-  scoped_model_sample:
-    path: ../scoped_model
   flutter_architecture_samples:
     path: ../../
   todos_repository_simple:
